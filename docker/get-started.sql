@@ -11,6 +11,12 @@ CREATE DATABASE TestDB
 SELECT Name from sys.Databases
 GO
 
+/** Create sample table **/
+USE TestDB
+CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT)
+GO
+
+
 /** Insert data **/
 USE TestDB
 INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2, 'orange', 154);
